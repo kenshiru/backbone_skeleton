@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>BBSkeleton</title>
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/underscore/underscore-min.js"></script>
+        <script src="bower_components/backbone/backbone-min.js"></script>
+    </head>
+    <body>
+        <script src="Core/Controller.js"></script>
+        <script src="Core/Module.js"></script>
+        <a href="#/form">Form</a>
+        <a href="#/random">Random</a>
+        <!--WRAPPER FOR MODULES-->
+        <div class="wrapper"></div>
+        
+        
+        <noscript id="wrapper-form">
+            <h1>FORM</h1>
+            <form class="form" style="background: #ff0000">
+                <a href="#/show/form">SHOW</a>
+            </form>
+        </noscript>
+        <noscript id="wrapper-random">
+            <h1>RANDOM</h1>
+            <div class="random" style="background: #00ff00">
+                <a href="#/random/asd">SHOW RANDOM</a>
+            </div>
+        </noscript>
+        
+        <noscript id="form">
+            <input type="text" class="form__input">
+            <div class="form__button" style="color: #fff; background: #000;">Write</div>
+        </noscript>
+        <noscript id="random">
+            <input class="random__input">
+            <div class="random__get">GetRandom</div>
+        </noscript>
+        
+        
+        <script src="application.js"></script>
+    </body>
+</html>
